@@ -1,0 +1,33 @@
+
+body {
+    background-image: url('villa.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.head1 {
+
+    color : rgb(9, 9, 10) ;
+ 
+}
+
+.ct1 {
+
+   text-align: center;
+}
+
+.ct2 {
+    text-align: center;
+}
+
+.bt1 {
+    background-color: greenyellow;
+}
+
+#ar {
+   font-size: 25;
+   font-weight: bold ;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: bisque;
+}

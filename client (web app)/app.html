@@ -1,0 +1,52 @@
+
+<!-- This is a UI application to take input of houses from user and send a request to a Flask Server  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <script src="app.js"></script>
+    <!-- jquery is a js lib that is small sized api that selects some html ele and does some action on it
+    (like sending that html ele to a flask server ) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="app.css">
+
+</head>
+<body class="body1">
+    <div class="ct1">
+    <form  method = "post">
+    <h2 class = "head1">Area in sqft</h2>
+    <input type="text" id="_1">
+
+    <h2>Location</h2>
+    <input type="text" id="_2">
+   
+    <h2>BHK</h2>
+    <input type="text" id="_3">
+
+    <h2>bathroom</h2>
+    <input type="text"id="_4">
+</form>
+</div>
+<br>
+<div class="ct2" >
+    <br>
+    <br>
+    <button onclick="estimate()" class="bt1"> Estimate Price </button> 
+</div>
+<div class="ct2">
+
+
+<!-- by default , submit button reloads the whole page , so use event.preventDefault() inside your estimation function in JS that is sending and 
+taking request to and from the deploymnt server ( Flask server) . -->
+
+<textarea id="ar"></textarea>
+</div>
+
+
+</body>
+</html>
